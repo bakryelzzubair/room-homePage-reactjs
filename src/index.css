@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: leagueSpartanSemiBold;
+    src: url("./assets//fonts/League_Spartan/static/LeagueSpartan-SemiBold.ttf");
+}
+@font-face {
+    font-family: leagueSpartanBold;
+    src: url("./assets//fonts/League_Spartan/static/LeagueSpartan-Bold.ttf");
+}
+@font-face {
+    font-family: leagueSpartanExtraBold;
+    src: url("./assets//fonts/League_Spartan/static/LeagueSpartan-ExtraBold.ttf");
+}
+
+
+
+@theme {
+--color-primary-Grey-500: hsl(0, 0%, 63%);
+--color-primary-Grey-800: hsl(0, 0%, 27%);
+--font-spartan-500: leagueSpartanSemiBold;
+--font-spartan-600: leagueSpartanBold;
+--font-spartan-700: leagueSpartanExtraBold
+}
+
+p {
+    font-size: 16px;
+}
+
+.navBtn::after {
+    content: "___";
+    color: transparent;
+    font-size: 20px;
+    position: absolute;
+    bottom: -8px;
+    left: 5px;
+    
+}
+
+.navBtn:hover::after{
+    color: white;
+    transition: all .3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .navBtn:hover::after {
+        color: black;
+    }
+}
