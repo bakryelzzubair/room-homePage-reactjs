@@ -10,7 +10,7 @@ const About = () => {
           <img src={aboutBlack} alt="" className="w-full" />
         </article>
         <article className="p-4 flex flex-col justify-center">
-          <h2 className=" text-xl lg:text-lg uppercase font-bold tracking-[.4rem] pb-4">
+          <h2 className=" text-lg uppercase font-bold tracking-[.3rem] pb-4">
             About our furniture
           </h2>
           <p className="text-primary-Grey-800 lg:text-sm">
