@@ -22,7 +22,7 @@ const About = () => {
             help you create your dream space.
           </p>
         </article>
-        <article>
+        <article className="py-4 lg:py-0">
           <img src={aboutLight} alt="" className="w-full" />
         </article>
       </section>
