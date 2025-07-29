@@ -31,11 +31,14 @@ const ShowCase = () => {
         >
           <picture>
             <source
+priority
               className="bg-contain lg:overflow-hidden"
               media="(min-width: 768px)"
               srcSet={assets[index].desktop}
+									alt={assets[index].title}
             />
             <img
+priority
               className="w-full h-full"
               src={assets[index].mobile}
               alt={assets[index].title}
