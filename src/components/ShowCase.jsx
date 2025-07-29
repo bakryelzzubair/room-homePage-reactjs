@@ -26,7 +26,7 @@ const ShowCase = () => {
     <>
       <section className="grid lg:grid-cols-[65vw_35vw] lg:overflow-hidden ">
         <article key={assets[index].id} className=" relative">
-          <picture>
+          <picture priority>
             <source
               className="bg-contain lg:overflow-hidden"
               media="(min-width: 768px)"
