@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <section className="grid grid-cols-1 lg:grid-cols-[30vw_40vw_30vw] lg:overflow-hidden">
-        <article>
+        <article className="py-4 lg:py-0">
           <img src={aboutBlack} alt="" className="w-full" />
         </article>
         <article className="p-4 flex flex-col justify-center">
