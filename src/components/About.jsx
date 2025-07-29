@@ -1,16 +1,16 @@
-import React from 'react'
-import aboutBlack from "../assets/images/image-about-dark.jpg"
-import aboutLight from "../assets/images/image-about-light.jpg"
+import React from "react";
+import aboutBlack from "../assets/images/image-about-dark.jpg";
+import aboutLight from "../assets/images/image-about-light.jpg";
 
 const About = () => {
   return (
     <>
       <section className="grid grid-cols-1 lg:grid-cols-[30vw_40vw_30vw] lg:overflow-hidden">
-        <article>
+        <article className="py-4 lg:py-0">
           <img src={aboutBlack} alt="" className="w-full" />
         </article>
         <article className="p-4 flex flex-col justify-center">
-          <h2 className=" text-xl lg:text-lg uppercase font-bold tracking-[.4rem] pb-4">
+          <h2 className="text-lg uppercase font-bold tracking-[.4rem] pb-4">
             About our furniture
           </h2>
           <p className="text-primary-Grey-800 lg:text-sm">
@@ -22,12 +22,12 @@ const About = () => {
             help you create your dream space.
           </p>
         </article>
-        <article>
+        <article className="py-4 lg:py-0">
           <img src={aboutLight} alt="" className="w-full" />
         </article>
       </section>
     </>
   );
-}
+};
 
-export default About
+export default About;

@@ -24,8 +24,11 @@ const ShowCase = () => {
   };
   return (
     <>
-      <section className="grid lg:grid-cols-[65vw_35vw] lg:overflow-hidden ">
-        <article key={assets[index].id} className=" relative">
+      <section className="grid lg:grid-cols-[65vw_35vw] ">
+        <article
+          key={assets[index].id}
+          className=" relative lg:overflow-hidden "
+        >
           <picture>
             <source
               className="bg-contain lg:overflow-hidden"
@@ -40,7 +43,7 @@ const ShowCase = () => {
           </picture>
         </article>
 
-        <article className="p-4 lg:p-8 relative">
+        <article className="p-4 lg:p-8 relative lg:overflow-hidden">
           <h1 className="py-4 lg:py-8 text-2xl lg:text-3xl font-bold capitalize">
             {assets[index].title}
           </h1>
@@ -48,7 +51,7 @@ const ShowCase = () => {
           <button className="flex gap-4 items-center mt-4 lg:mt-8 hover:opacity-50 tracking-[.5rem] font-bold text-xs">
             SHOP NOW <img src={arrow} />
           </button>
-          <ul className=" absolute -top-12 right-0 lg:top-101 lg:left-0 h-[3rem] w-[5rem] lg:w-[5vw] flex items-center justify-around">
+          <ul className=" absolute -top-12 right-0 lg:top-[58.5vh] lg:left-0 h-[3rem] w-[5rem] lg:w-[5vw] flex items-center justify-around">
             <li className="bg-black w-full h-full hover:bg-neutral-600">
               <button onClick={handlePrevBtn} className="w-full h-full">
                 <img src={previous} alt="" className="mx-auto" />

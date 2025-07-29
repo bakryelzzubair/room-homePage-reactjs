@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="grid lg:grid-rows-[65vh_35vh]">
+      <main className="grid lg:grid-rows-[65vh_35vh] lg:overflow-hidden">
         <ShowCase />
         <About />
       </main>
